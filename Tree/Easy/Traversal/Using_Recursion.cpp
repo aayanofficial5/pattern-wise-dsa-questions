@@ -1,22 +1,8 @@
 //Time Complexity: O(N) 
 //Space Complexity: O(N)
 #include <iostream>
+#include <TreeNode.cpp>
 using namespace std;
-
-class TreeNode
-{
-public:
-  int data;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int data)
-  {
-    this->data = data;
-    this->left = nullptr;
-    this->right = nullptr;
-  }
-  TreeNode(int val,TreeNode* left,TreeNode* right):data(val),left(left),right(right){}
-};
 
 // leetcode : 94 (InOrder Traversal of binary tree)
 void InOrderTraversal(TreeNode *root)
